@@ -1,6 +1,6 @@
 .card {
   border: 1px solid $card-border-color;
-  border-radius: 5px;
+  border-radius: $border-radius-sm;
 
   box-sizing: border-box;
   width: $card-width;
@@ -14,11 +14,11 @@
   }
 
   &__image {
-    width: 160px;
-    height: 134px;
+    width: $card-image-width;
+    height: $card-image-height;
 
     display: block;
-    margin: 0 auto 40px;
+    margin: 0 auto $image-margin;
   }
 
   &__info {
@@ -27,7 +27,7 @@
 
   &__title {
     color: $main-text-color;
-    font-size: 12px;
+    font-size: $font-size-medium;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 0%;
@@ -42,7 +42,7 @@
 
   &__code {
     color: $secondary-text-color;
-    font-size: 10px;
+    font-size: $font-size-small;
     margin-top: 4px;
   }
 
@@ -56,7 +56,7 @@
   &__reviews {
     margin: 0;
     color: $main-text-color;
-    font-size: 10px;
+    font-size: $font-size-small;
   }
 
   &__price {
@@ -77,7 +77,7 @@
   &__value {
     color: $main-text-color;
     font-weight: 700;
-    font-size: 16px;
+    font-size: $font-size-huge;
     margin: 0;
   }
 
@@ -89,7 +89,7 @@
 
     width: 165px;
     height: 39px;
-    border-radius: 5px;
+    border-radius: $border-radius-sm;
 
     border: 1px solid transparent;
 
@@ -100,7 +100,7 @@
 
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
+    font-size: $font-size-big;
     line-height: 16px;
 
     transition: all $transition-duration;
