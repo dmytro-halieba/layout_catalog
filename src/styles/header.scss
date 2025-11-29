@@ -9,18 +9,18 @@
 
 .logo {
   display: block;
-  height: 40px;
+  height: $logo-height;
 }
 
 .header {
-  padding: 0 50px;
+  padding: 0 $header-padding;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
 
-  box-shadow: 0 2px 4px 0 #0000000d;
+  box-shadow: 0 $header-box-ver-shadow $header-box-hor-shadow 0 #0000000d;
 }
 
 .menu__ul {
@@ -42,9 +42,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 60px;
+  height: $menu-link-height;
 
-  transition: all 300ms;
+  transition: all $transition-duration;
 }
 
 .menu__items:first-child {
@@ -68,8 +68,8 @@
   position: absolute;
   background-color: $accent-color;
   width: 100%;
-  height: 4px;
-  border-radius: 8px;
+  height: $link-bottom-line-height;
+  border-radius: $link-bottom-line-border-radius;
   bottom: 0;
   left: 0;
 }

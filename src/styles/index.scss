@@ -13,21 +13,21 @@ body {
   display: grid;
   grid-template-columns: $card-width;
 
-  gap: 46px 48px;
+  gap: $container-gap-ver $container-gap-hor;
 
   justify-content: center;
 
-  padding: 50px 40px;
+  padding: $container-padding-ver $container-padding-hor;
 
-  @media (min-width: 488px) {
+  @media (min-width: $breakpoint-sm) {
     grid-template-columns: repeat(2, $card-width);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     grid-template-columns: repeat(3, $card-width);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-bg) {
     grid-template-columns: repeat(4, $card-width);
   }
 }

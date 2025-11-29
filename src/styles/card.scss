@@ -5,12 +5,12 @@
   box-sizing: border-box;
   width: $card-width;
   height: $card-height;
-  padding: 32px 16px 16px;
+  padding: $card-padding-ver $card-padding-hor $card-padding-hor;
 
   transition: all $transition-duration;
 
   &:hover {
-    transform: scale(120%);
+    transform: scale(1.2);
   }
 
   &__image {
@@ -43,14 +43,14 @@
   &__code {
     color: $secondary-text-color;
     font-size: $font-size-small;
-    margin-top: 4px;
+    margin-top: $card-code-marg-top;
   }
 
   &__rating {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: $card-rating-marg-top;
   }
 
   &__reviews {
@@ -65,7 +65,7 @@
     justify-content: space-between;
     align-items: baseline;
 
-    margin-top: 24px;
+    margin-top: $card-price-marg-top;
   }
 
   &__label {
@@ -83,12 +83,12 @@
 
   &__button {
     display: flex;
-    margin-top: 16px;
+    margin: $card-button-marg-top auto 0;
     justify-content: center;
     align-items: center;
 
-    width: 165px;
-    height: 39px;
+    width: $card-button-width;
+    height: $card-button-height;
     border-radius: $border-radius-sm;
 
     border: 1px solid transparent;
